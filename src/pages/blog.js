@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import styled, { css } from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
 import siteConfig from '../../data/siteConfig'
