@@ -7,7 +7,7 @@
 // You can delete this file if you're not using it
 exports.createPages = async ({ graphql, actions, reporter }, options) => {
   const { createPage } = actions;
-
+  const { createTypes } = actions
   const pageTemplate = require.resolve('./src/templates/post.js');
 
   const result = await graphql(
