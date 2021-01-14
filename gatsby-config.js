@@ -34,6 +34,27 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-notionso`,
+      options: {
+        rootPageUrl: process.env.NOTION_URL,
+        name: 'Blog'
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
