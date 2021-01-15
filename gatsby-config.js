@@ -38,7 +38,7 @@ module.exports = {
       resolve: `gatsby-source-notionso`,
       options: {
         rootPageUrl: process.env.NOTION_URL,
-        name: 'Blog'
+        name: 'Blog',
       },
     },
     {

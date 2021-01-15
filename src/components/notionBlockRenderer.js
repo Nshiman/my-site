@@ -136,7 +136,7 @@ const _attToClassName = {
   c: 'nso-code',
 };
 
-function mkRenderFuncs(_notionPageBlog) {
+function mkRenderFuncs(notionPageBlog) {
   return {
     wrapText: text => {
       return <React.Fragment>{text}</React.Fragment>;

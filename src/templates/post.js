@@ -53,7 +53,7 @@ export default styled(Post)`
 
 export const query = graphql`
   query($pageId: String!) {
-    NotionPageBlog(pageId: { eq: $pageId }) {
+    notionPageBlog(pageId: { eq: $pageId }) {
       blocks {
         blockId
         blockIds
