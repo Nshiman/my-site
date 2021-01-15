@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions, reporter }, options) => {
   }
 
   result.data.allNotionPageBlog.edges.forEach(({ node }) => {
-    const path = `/blog/${node.slug}`;
+    const path = `/content/blog/${node.slug}`;
     createPage({
       path,
       component: pageTemplate,
